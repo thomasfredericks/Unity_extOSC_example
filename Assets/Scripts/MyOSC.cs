@@ -1,14 +1,15 @@
-using extOSC;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
+using extOSC;
 
 public class MyOSC : MonoBehaviour
 {
 
-    public extOSC.OSCReceiver oscReceiver;
-    public extOSC.OSCTransmitter oscTransmitter;
+    public OSCReceiver oscReceiver;
+    public OSCTransmitter oscTransmitter;
     public GameObject potGameObject;
     public GameObject photoGameObject;
     public GameObject positionGameObject;
