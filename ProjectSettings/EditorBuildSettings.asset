@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/extOsc_encodeur.unity
+    guid: 253fb72c820137b4999aa20cfec251aa
+  - enabled: 1
+    path: Assets/Scenes/extOsc_pot_photo_position_pixel.unity
+    guid: 7c4ff651353c23a4d93f68becf17b550
   m_configObjects: {}

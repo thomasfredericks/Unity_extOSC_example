@@ -5,7 +5,7 @@ using UnityEditor.VersionControl;
 using UnityEngine;
 using extOSC;
 
-public class MyOSC : MonoBehaviour
+public class OscPotPhotoPositionPixel : MonoBehaviour
 {
 
     public OSCReceiver oscReceiver;
