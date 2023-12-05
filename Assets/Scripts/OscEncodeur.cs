@@ -12,7 +12,7 @@ public class OscEncodeur : MonoBehaviour
     public float jumpForce = 10f;
     public float torqueMultiplier = -5f;
     Rigidbody2D targetRigidbody2D;
-    float previousButtonValue = 1;
+    
 
     public static float ScaleValue(float value, float inputMin, float inputMax, float outputMin, float outputMax)
     {
@@ -45,6 +45,7 @@ public class OscEncodeur : MonoBehaviour
         targetRigidbody2D.AddTorque(value * torqueMultiplier);
     }
 
+    float previousButValue;
     void ButMessageReceived(OSCMessage oscMessage)
     {
         float value;
@@ -61,13 +62,11 @@ public class OscEncodeur : MonoBehaviour
             // If message is neither Int or Float do nothing
             return;
         }
-        if (value != previousButtonValue && value == 0)
+        if (value != previousButValue && value == 0)
         {
             targetRigidbody2D.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
-        previousButtonValue = value;
-
-
+        previousButValue = value;
     }
 
     // Start is called before the first frame update
